@@ -7,9 +7,16 @@
     font-family: "Montserrat", sans-serif;
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
   body {
     /* @apply bg-body; */
-    overflow: hidden;
+    position: relative;
+    height: fit-content;
     background-color: #1a1a2a;
     background-image: linear-gradient(
         60deg,
