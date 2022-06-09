@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  body {
+    /* @apply bg-body; */
+    overflow: hidden;
+    background-color: #1a1a2a;
+    background-image: linear-gradient(
+        60deg,
+        rgba(50, 66, 133, 0.2) 61%,
+        transparent
+      ),
+      linear-gradient(
+        120deg,
+        rgb(241, 78, 35, 0.2) 2%,
+        transparent 68%,
+        rgb(26, 26, 42)
+      );
+  }
+}
+
+@layer components {
+  .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+  }
+
+  .focus-ring-primary {
+    @apply outline outline-primary outline-offset-1 outline-4 duration-200;
+  }
+
+  .focus-ring-secondary {
+    @apply outline outline-secondary outline-offset-1 outline-4 duration-200;
+  }
+
+  /*
+    .focus-ring-tertiary {
+      @apply outline outline-tertiary outline-offset-1 outline-4;
+    } */
+}
