@@ -10,11 +10,11 @@ import cs from "classnames";
 const Navbar = () => {
   return (
     <nav className="flex items-center">
-      <button className="focus:focus-ring-secondary rounded hidden lg:flex">
-        <IoMailSharp className="text-offWhite text-4xl hover:text-secondary duration-150 hover:scale-125 cursor-pointer" />
+      <button className="focus:focus-ring-primary rounded hidden lg:flex">
+        <IoMailSharp className="text-offWhite text-4xl hover:text-primary duration-150 hover:scale-125 cursor-pointer" />
       </button>
       <Menu as="div" className="relative">
-        <Menu.Button className="flex focus:focus-ring-secondary rounded items-center lg:ml-10 cursor-pointer">
+        <Menu.Button className="flex focus:focus-ring-primary rounded items-center lg:ml-10 cursor-pointer">
           <div className="w-14 h-14 rounded-full overflow-hidden">
             <img
               className="object-cover w-full"

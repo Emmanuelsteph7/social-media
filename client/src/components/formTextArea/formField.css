@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+  .focus-ring-primary {
+    @apply outline outline-primary outline-offset-1 outline-4;
+  }
+
+  /* .focus-ring-secondary {
+    @apply outline outline-secondary outline-offset-1 outline-4;
+  }
+
+  .focus-ring-tertiary {
+    @apply outline outline-tertiary outline-offset-1 outline-4;
+  } */
+}

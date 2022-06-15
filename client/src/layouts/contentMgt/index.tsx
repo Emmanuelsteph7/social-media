@@ -9,7 +9,7 @@ const ContentMgtLayout: React.FC<Props> = ({ children }) => {
   return (
     <div>
       <ContentMgtHeader />
-      {children}
+      <div className="container">{children}</div>
     </div>
   );
 };
