@@ -36,6 +36,7 @@ const RegisterView: React.FC<Props> = ({
               name="userName"
               error={errors.userName}
               value={form.userName}
+              className="mb-6"
             />
             <FormField
               onChange={handleChange}
@@ -43,6 +44,7 @@ const RegisterView: React.FC<Props> = ({
               name="firstName"
               error={errors.firstName}
               value={form.firstName}
+              className="mb-6"
             />
             <FormField
               onChange={handleChange}
@@ -50,6 +52,7 @@ const RegisterView: React.FC<Props> = ({
               name="lastName"
               error={errors.lastName}
               value={form.lastName}
+              className="mb-6"
             />
             <FormField
               onChange={handleChange}
@@ -58,6 +61,7 @@ const RegisterView: React.FC<Props> = ({
               type="password"
               error={errors.password}
               value={form.password}
+              className="mb-6"
             />
           </div>
           <div className="flex justify-center items-center">

@@ -8,6 +8,7 @@ import { AnimatePresence } from "framer-motion";
 
 const Login = lazy(() => import("pages/login"));
 const Register = lazy(() => import("pages/register"));
+const Dashboard = lazy(() => import("pages/dashboard"));
 
 const RouterConfig = () => {
   const location = useLocation();
@@ -17,6 +18,7 @@ const RouterConfig = () => {
         <Routes key={location.pathname} location={location}>
           <Route path={Path.Login} element={<Login />} />
           <Route path={Path.Register} element={<Register />} />
+          <Route path={Path.Dashboard} element={<Dashboard />} />
         </Routes>
       </AnimatePresence>
     </Suspense>

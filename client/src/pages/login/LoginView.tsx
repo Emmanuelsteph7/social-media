@@ -34,6 +34,7 @@ const LoginView: React.FC<Props> = ({
               name="userName"
               error={errors.userName}
               value={form.userName}
+              className="mb-6"
             />
             <FormField
               onChange={handleChange}
@@ -42,6 +43,7 @@ const LoginView: React.FC<Props> = ({
               type="password"
               error={errors.password}
               value={form.password}
+              className="mb-6"
             />
           </div>
           <div className="flex justify-center items-center">
