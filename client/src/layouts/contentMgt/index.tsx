@@ -7,10 +7,10 @@ interface Props {
 
 const ContentMgtLayout: React.FC<Props> = ({ children }) => {
   return (
-    <div>
+    <>
       <ContentMgtHeader />
       <div className="container">{children}</div>
-    </div>
+    </>
   );
 };
 

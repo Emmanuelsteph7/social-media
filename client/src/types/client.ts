@@ -32,4 +32,17 @@ export module API {
       lastName: string;
     }
   }
+
+  export namespace Data {
+    export interface Trends {
+      id: number;
+      trend: string;
+    }
+
+    export interface Suggested {
+      id: number;
+      image: string;
+      name: string;
+    }
+  }
 }

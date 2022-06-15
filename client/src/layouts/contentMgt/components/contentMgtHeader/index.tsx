@@ -4,6 +4,20 @@ import { Path } from "notifications/routes";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
+
+const variants = {
+  initial: {
+    y: -100,
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
 
 const ContentMgtHeader = () => {
   const [search, setSearch] = useState("");
@@ -14,7 +28,12 @@ const ContentMgtHeader = () => {
   const debouncedValue = useDebounce(search);
   console.log(debouncedValue);
   return (
-    <header className="bg-primaryLight mb-8">
+    <motion.header
+      variants={variants}
+      initial="initial"
+      animate="animate"
+      className="bg-primaryLight shadow mb-8 sticky top-0 z-10"
+    >
       <div className="container flex justify-between items-center gap-20 py-4">
         <button className="focus:focus-ring-secondary rounded">
           <Link to={Path.Dashboard}>
@@ -32,7 +51,7 @@ const ContentMgtHeader = () => {
         </div>
         <Navbar />
       </div>
-    </header>
+    </motion.header>
   );
 };
 

@@ -9,7 +9,7 @@
 
   html,
   body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
   }
 
@@ -36,7 +36,7 @@
   .container {
     width: 90%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1400px;
   }
 
   .focus-ring-primary {
