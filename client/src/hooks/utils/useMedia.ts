@@ -35,12 +35,12 @@ export const useMedia = () => {
         };
 
         // add a change event to the media when the window size changes
-        media.addEventListener("change", listener);
+        media?.addEventListener("change", listener);
 
         // this sets the initial media attributes
         setBreakpointState((prev) => ({
           ...prev,
-          [key]: media.matches,
+          [key]: media?.matches,
         }));
 
         // return an array of the media and the listener

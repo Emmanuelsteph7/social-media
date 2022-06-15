@@ -1,5 +1,4 @@
 import { Button, FormField, Logo, LinkTag } from "components";
-import { useMedia } from "hooks/utils/useMedia";
 import { Path } from "notifications/routes";
 import React from "react";
 import { GoArrowSmallRight } from "react-icons/go";
@@ -20,9 +19,8 @@ const LoginView: React.FC<Props> = ({
   handleSubmit,
   isLoading,
 }) => {
-  const { isDesktop } = useMedia();
   return (
-    <div className="lg:flex-1 flex">
+    <div data-testid="loginView" className="lg:flex-1 flex">
       <div className="container">
         <div className="hidden lg:flex justify-center items-center mb-10">
           <Logo variant="lg" />
@@ -47,7 +45,11 @@ const LoginView: React.FC<Props> = ({
             />
           </div>
           <div className="flex justify-center items-center">
-            <Button loading={isLoading} fullWidth={!isDesktop} type="submit">
+            <Button
+              loading={isLoading}
+              className="w-full lg:w-auto"
+              type="submit"
+            >
               Submit
             </Button>
           </div>

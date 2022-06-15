@@ -20,7 +20,7 @@ const FormField: React.FC<Props> = ({
 }) => {
   const id = useId();
   return (
-    <div className="flex flex-col mb-6">
+    <div data-testid="formField" className="flex flex-col mb-6">
       {label && (
         <label
           className="mb-1 font-semibold text-base text-offWhite"
@@ -37,7 +37,14 @@ const FormField: React.FC<Props> = ({
         value={value}
         onChange={onChange}
       />
-      {error && <span className="text-danger mt-1 text-xs">{error}</span>}
+      {error && (
+        <span
+          data-testid="formField-error"
+          className="text-danger mt-1 text-xs"
+        >
+          {error}
+        </span>
+      )}
     </div>
   );
 };
